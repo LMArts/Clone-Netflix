@@ -1,0 +1,101 @@
+:root{
+    --red:#e50914;
+    --black:#141414;
+    --gray:#f6f3f3d2;
+    --white:#ffffff;
+}
+
+/* Base */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: var(--black);
+    font-family: 'Times New Roman', Times, serif;
+    color: var(--white);
+}
+
+header .container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .logo{
+    color: var(--red);
+    font-family: 'Arial Black', Times;
+    text-align: left;
+    font-size: 3em;
+    margin-left: 0.5em;
+}
+
+header nav a {
+    text-decoration: none;
+    color: var(--gray);
+    margin-right: 1em;
+}
+
+header nav a:hover{
+    color: var(--white);
+}
+
+/* Principal */
+
+.filme-principal{
+    font-size: 1em;
+    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url(shera-background.jpg);
+    height: 500px;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.filme-principal .container{
+    margin-left: 2em;
+    width: 60%;
+}
+
+.filme-principal .descricao{
+    margin-top: .5em;
+    margin-bottom: 3em;
+}
+
+.filme-principal .titulo{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 2.8em;
+    margin-top: 8%;
+}
+
+.filme-principal .botao{
+    background-color: rgba(0,0,0,.50);
+    padding: 1em 2em;
+    margin-right: 1em;
+    font-size: 0.8em;
+    cursor: pointer;
+    border: none;
+    color: var(--white);
+    transition: .3s ease all;
+}
+
+.filme-principal .botao:hover{
+    color: var(--black);
+    background-color: var(--white);
+}
+
+.filme-principal .botao i {
+    margin-right: 1em;
+}
+
+.box-filme{
+    height: 100%;
+    width: 100%;
+    display: block;
+    margin: 1em 0;
+}
